@@ -105,23 +105,23 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                           color: const Color(0Xff454D5A),
                         ),
                         child: Center(
-                          child: TextFormField(
-                            textAlign: TextAlign.start,
-                            decoration: InputDecoration(
-                              hintText: "Search Products",
-                              contentPadding:
-                                  EdgeInsets.only(top: 3, left: 10.w),
-                              hintStyle: TextStyle(
-                                  color: Colors.white, fontSize: 15.sp),
-                              suffixIcon: Padding(
-                                padding: EdgeInsets.only(top: 3.h, right: 3.w),
-                                child: Icon(
+                          child: Padding(
+                            padding:  EdgeInsets.only(left: 10.w,right: 2.w),
+                            child: TextFormField(
+                              textAlignVertical: TextAlignVertical.center,
+
+                              decoration: InputDecoration(
+                                hintText: "Search Products",
+                                hintStyle: TextStyle(
+                                    color: Colors.white, fontSize: 15.sp),
+                                suffixIcon: Icon(
+
                                   Icons.search,
                                   size: 1.sh / 30,
                                   color: Colors.white,
                                 ),
+                                border: InputBorder.none,
                               ),
-                              border: InputBorder.none,
                             ),
                           ),
                         )),
